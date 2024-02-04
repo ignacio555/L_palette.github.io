@@ -1658,10 +1658,12 @@ section {
   justify-content: center;
 }
 
+
 .display_flex
 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img_l
@@ -1680,7 +1682,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   padding-top: 1rem;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .parrafo_img
@@ -1691,4 +1693,25 @@ section {
 .titulo
 {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 575px) {
+  .display_flex
+    {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contendor_img
+    {
+      background-color: #DFDCDC;
+      width: 18rem;
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 1rem;
+      margin-right: 1rem;
+    }
 }
